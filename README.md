@@ -46,11 +46,6 @@ Recovery        | TWRP
     - [x] Without a password
     - [x] With a password
 
-### Advanced functionality
-
-- [x] Recovery password protection
-- [x] Flashlight
-- [x] Changing themes and splash after reboot
 
 
 
