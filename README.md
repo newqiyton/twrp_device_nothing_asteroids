@@ -19,13 +19,13 @@ Battery                 | Non-removable 5000 mAh
 Dimensions              | 163.5 x 77.5 x 8.4 mm
 Display                 | 6.77" AMOLED, 120hz
 
-Recovery        | OrangeFox Recovery R11.3_1
+Recovery        | TWRP 14.0
 :---------------|:---------------------------
-Variant         | 6.1 (stock ROM only)
-Manifest used   | `fox_14.1`
+Variant         | 6.6 (custom ROM only)
+
 
 > [!NOTE]
-> This branch only works on stock ROM right now since custom ROMs are running on a different kernel version.
+> This branch only works on custom ROM right now but stock ROM is in development
 > Please don't ask for support until I add it sometime later.
 
 ## Checklist
@@ -52,21 +52,8 @@ Manifest used   | `fox_14.1`
     - [x] Without a password
     - [x] With a password
 
-### Advanced functionality
 
-- [x] Recovery password protection
-- [x] Flashlight
-- [x] Changing themes and splash after reboot
-
-> [!NOTE]
-> This functionality list was adapted from the [Maintainership requirements](https://wiki.orangefox.tech/en/dev/maintainerships#test-suite) of OrangeFox in the Test Suite section, and [chickendrop89](https://github.com/chickendrop89)'s [device tree](https://github.com/chickendrop89/device_xiaomi_amethyst-recovery) README.md file
 
 ## Credits
 
-- The countless device trees I took inspiration from.
-- [chickendrop89](https://github.com/chickendrop89)'s [device tree](https://github.com/chickendrop89/device_xiaomi_amethyst-recovery) for the Xiaomi Redmi Note _14 Pro+_ 5G, which has the same board and processor as the Nothing Phone (3a)
-- [ROM dumps](https://dumps.tadiphone.dev/dumps/nothing/asteroids/-/tree/qssi_64-user-16-BQ2A.250721.001-BP2A.250605.031.A3-2511181551-release-keys?ref_type=heads) from the Nothing Phone (3a), which I took some files from in order to make this device tree.
-- [MrYacha](https://gitlab.com/MrYacha)'s original tree which I forked to continue his work.
-- The [OrangeFox discord server](https://discord.gg/GpYTArw22N) which helped me through some of the hard work and gave tips.
-
-
+Ubuntuify's device tree (orangefox)
