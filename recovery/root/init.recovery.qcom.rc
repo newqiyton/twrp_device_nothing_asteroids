@@ -38,9 +38,12 @@ on property:twrp.modules.loaded=true
     wait /sys/class/power_supply/battery
 
     start health-hal-2-1
-    # Disable Haptics for the time being, non-functional
-    # start vendor.qti.vibrator
 
+
+    # Haptics, test
+    start vendor.qti.vibrator
+
+    # If using newer sysfs interfaces, add them here
     # Unmount /firmware
 
 on boot

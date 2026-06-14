@@ -2,14 +2,14 @@
 
 # Logical partitions
 #
-/system_root      ext4        system                                      flags=display=System;logical;slotselect
-/system_ext       ext4        system_ext                                  flags=display=System_EXT;logical;slotselect
-/system_dlkm      ext4        system_dlkm                                 flags=display=System_DLKM;logical
-/vendor_dlkm      ext4        vendor_dlkm                                 flags=display=Vendor_DLKM;logical
-/system_root      erofs       system                                      flags=display=System;logical;slotselect
-/system_ext       erofs       system_ext                                  flags=display=System_EXT;logical
-/system_dlkm      erofs       system_dlkm                                 flags=display=System_DLKM;logical
-/vendor_dlkm      erofs       vendor_dlkm                                 flags=display=Vendor_DLKM;logical
+/system_root      ext4        system                                      flags=ro;display=System;logical;slotselect
+/system_ext       ext4        system_ext                                  flags=ro;display=System_EXT;logical;slotselect
+/system_dlkm      ext4        system_dlkm                                 flags=ro;display=System_DLKM;logical
+/vendor_dlkm      ext4        vendor_dlkm                                 flags=ro;display=Vendor_DLKM;logical
+/system_root      erofs       system                                      flags=ro;display=System;logical;slotselect
+/system_ext       erofs       system_ext                                  flags=ro;display=System_EXT;logical
+/system_dlkm      erofs       system_dlkm                                 flags=ro;display=System_DLKM;logical
+/vendor_dlkm      erofs       vendor_dlkm                                 flags=ro;display=Vendor_DLKM;logical
 
 # Userdata/metadata partitions
 /metadata         auto        /dev/block/by-name/metadata                 flags=display="Metadata";backup=1;wrappedkey
@@ -42,7 +42,7 @@
 /bluetooth        vfat        /dev/block/bootdevice/by-name/bluetooth     flags=display="Bluetooth";slotselect;fsflags="ro,shortname=lower,uid=1002,gid=3002,dmask=227,fmask=337,context=u:object_r:bt_firmware_file:s0 wait"
 /bluetooth_image  emmc        /dev/block/bootdevice/by-name/bluetooth     flags=display="Bluetooth";slotselect;backup=1;flashimg=1
 
-# UEFI partitions (not applicable???) TODO: investigate this
+# UEFI partitions
 /logfs            vfat        /dev/block/bootdevice/by-name/logfs         flags=display="LogFS (UEFI)";fsflags="umask=006,uid=1000,gid=1000,utf8"
 
 # EFS partitions

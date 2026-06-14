@@ -20,6 +20,9 @@ $(call inherit-product, $(DEVICE_PATH)/device.mk)
 # Include TWRP props
 $(call inherit-product, $(DEVICE_PATH)/twrp_config.mk)
 
+# Include haptics config
+$(call inherit-product, $(DEVICE_PATH)/haptics.mk)
+
 PRODUCT_DEVICE := Asteroids
 PRODUCT_NAME := twrp_Asteroids
 PRODUCT_BRAND := Nothing
