@@ -25,7 +25,6 @@ Variant         | 6.6 (custom ROM only)
 
 
 > [!NOTE]
-> This branch only works on custom ROM right now but stock ROM is in development
 > Please don't ask for support until I add it sometime later.
 
 ## Checklist
@@ -52,7 +51,8 @@ Variant         | 6.6 (custom ROM only)
     - [x] Without a password
     - [x] With a password
 
-
+## Bugs
+Unhandled flag: ro
 
 ## Credits
 
