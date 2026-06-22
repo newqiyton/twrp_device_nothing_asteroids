@@ -1,4 +1,4 @@
-# device_nothing_asteroids-recovery
+# twrp_device_nothing_asteroids
 
 Recovery tree for the Nothing Phone (3a), codenamed `asteroids`.
 
@@ -21,7 +21,8 @@ Display                 | 6.77" AMOLED, 120hz
 
 Recovery        | TWRP 14.0
 :---------------|:---------------------------
-Variant         | 6.6 (custom ROM only)
+Variant         | 6.6
+Manifest        | https://github.com/nebrassy/platform_manifest_twrp_aosp.git
 
 
 > [!NOTE]
@@ -42,6 +43,7 @@ Variant         | 6.6 (custom ROM only)
     - [x] FastbootD
     - [x] Screen and brightnesss
     - [x] Touchscreen
+    - [ ] Unmount
     - [x] MTP
     - [x] Filesystem/Mounts
     - [x] Slot switch
@@ -52,8 +54,12 @@ Variant         | 6.6 (custom ROM only)
     - [x] With a password
 
 ## Bugs
-Unhandled flag: ro
+Wipe, partial
+
+Cant unmount /data, more likely manifest's fault as zulipchat says manifest cant unmount /data
 
 ## Credits
 
-Ubuntuify's device tree (orangefox)
+Ubuntuify's device tree: https://github.com/Ubuntuify/device_nothing_asteroids-recovery
+Asteroids Dumps: https://dumps.tadiphone.dev/dumps/nothing/asteroids/-/tree/qssi_64-user-16-BQ2A.250721.001-BP2A.250605.031.A3-2511181551-release-keys?ref_type=heads
+Custom Rom device tree/s: https://github.com/NullDebris
