@@ -61,5 +61,7 @@ Cant unmount /data, more likely manifest's fault as zulipchat says manifest cant
 ## Credits
 
 Ubuntuify's device tree: https://github.com/Ubuntuify/device_nothing_asteroids-recovery
+
 Asteroids Dumps: https://dumps.tadiphone.dev/dumps/nothing/asteroids/-/tree/qssi_64-user-16-BQ2A.250721.001-BP2A.250605.031.A3-2511181551-release-keys?ref_type=heads
+
 Custom Rom device tree/s: https://github.com/NullDebris
