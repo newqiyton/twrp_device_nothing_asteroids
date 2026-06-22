@@ -16,4 +16,4 @@ TW_INCLUDE_LIBRESETVIBRATOR := true
 
 # Load Haptic drivers
 TW_LOAD_VENDOR_MODULES := "qti_battery_charger.ko swr_dlkm.ko swr_haptic_dlkm.ko hapticdrv.ko"
-TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := tru
+TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
