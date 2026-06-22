@@ -1,5 +1,5 @@
 # ---------------
-# Haptics Configs
+# Haptics Config
 # ---------------
 
 DEVICE_PATH := device/nothing/Asteroids
@@ -11,11 +11,9 @@ TW_USE_EXTERNAL_VIBRATOR_HAL := true
 
 # AIDL haptics
 TW_SUPPORT_INPUT_AIDL_HAPTICS := true
-TW_SUPPORT_INPUT_AIDL_HAPTICS_FQNAME := "IVibrator/default"
-TW_SUPPORT_INPUT_AIDL_HAPTICS_FIX_OFF := true 
+TW_SUPPORT_INPUT_AIDL_HAPTICS_FQNAME := "IVibrator/vendor.qti.vibrator"
+TW_INCLUDE_LIBRESETVIBRATOR := true
 
-# Using haptics dumps I found
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/vibrator/100_Haptic.bin:recovery/root/vendor/firmware/100_Haptic.bin \
-    $(DEVICE_PATH)/vibrator/101_Haptic.bin:recovery/root/vendor/firmware/101_Haptic.bin \
-    $(DEVICE_PATH)/vibrator/haptic_config.bin:recovery/root/vendor/firmware/haptic_config.bin
+# Load Haptic drivers
+TW_LOAD_VENDOR_MODULES := "qti_battery_charger.ko swr_dlkm.ko swr_haptic_dlkm.ko hapticdrv.ko"
+TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := tru

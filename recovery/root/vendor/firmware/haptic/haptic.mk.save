@@ -1,0 +1,4 @@
+qti_battery_charger.ko
+swr_dlkm.ko
+swr_haptics_dlkm.ko
+hapticdrv.ko

@@ -12,6 +12,11 @@ on early-init
     write /sys/bus/platform/devices/1d84000.ufshc/clkgate_enable 0
     write /sys/bus/platform/devices/1d84000.ufshc/enable_wb_buf_flush 0
 
+# Load touch drivers
+insmod /vendor/firmware/touch/panel_event_notifier.ko
+insmod /vendor/firmware/touch/touchpanel_event_notify.ko
+insmod /vendor/firmware/touch/focaltech_fts.ko
+
 on init
     start vendor.boot-qti
 
