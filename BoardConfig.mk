@@ -59,13 +59,6 @@ TARGET_PREBUILT_KERNEL        := $(DEVICE_PATH)/prebuilt/kernel
 BOARD_MKBOOTIMG_ARGS          += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS          += --pagesize $(BOARD_KERNEL_PAGESIZE)
 
-# DTB
-#BOARD_INCLUDE_DTB_IN_VENDOR_BOOT := true
-#BOARD_PREBUILT_DTBIMAGE := device/nothing/Asteroids/prebuilt/dtb.img
-#DTBO
-#BOARD_KERNEL_SEPARATED_DTBO := true
-#BOARD_PREBUILT_DTBOIMAGE := device/nothing/Asteroids/prebuilt/dtbo.img
-
 # Partitions
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
