@@ -23,6 +23,8 @@ Recovery        | TWRP 14.0
 :---------------|:---------------------------
 Variant         | 6.6
 Manifest        | https://github.com/nebrassy/platform_manifest_twrp_aosp.git
+Manifest-2      | https://github.com/TWRP-Test/platform_manifest_twrp_aosp.git
+
 
 
 > [!NOTE]
