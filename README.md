@@ -43,7 +43,7 @@ Manifest        | https://github.com/nebrassy/platform_manifest_twrp_aosp.git
     - [x] FastbootD
     - [x] Screen and brightnesss
     - [x] Touchscreen
-    - [ ] Unmount
+    - [x] Unmount
     - [x] MTP
     - [x] Filesystem/Mounts
     - [x] Slot switch
@@ -54,9 +54,11 @@ Manifest        | https://github.com/nebrassy/platform_manifest_twrp_aosp.git
     - [x] With a password
 
 ## Bugs
-Wipe, partial
+Umnount
+If you did unmount and stuck in twrp loop, go to bootloader and do 'fastboot erase misc'
 
-Cant unmount /data, more likely manifest's fault as zulipchat says manifest cant unmount /data
+
+Haptics wont work
 
 ## Credits
 
