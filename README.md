@@ -1,3 +1,6 @@
+TWRP is no longer being developed for that phone
+
+
 # twrp_device_nothing_asteroids
 
 Recovery tree for the Nothing Phone (3a), codenamed `asteroids`.
